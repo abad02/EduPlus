@@ -1,0 +1,326 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box; /* padding incluido en el tamaño total */
+}
+
+body{
+    background-color:rgb(255, 224, 178);
+    font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+}
+#container{
+    background-color: rgb(255, 112, 67);
+    max-width: 1000px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+}
+
+header{
+  /*  position: sticky;
+    top: 0;*/
+    display:flex;
+    justify-content: space-between;
+     background-color: rgb(255, 112, 67);
+    padding:1rem;
+    color:white;
+    font-weight: bold;
+    border-radius: 1rem;
+
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+
+   
+}
+
+nav a{
+    margin:.5em;
+}
+
+
+main{
+    background-color: rgb(251, 192, 45);
+    display:flex;
+    flex-direction: column;
+    color:white;
+    
+}
+
+section{
+    /*justificando texto dentro de la sección */
+    text-align: justify;
+}
+
+
+
+footer{
+    background-color: rgb(255, 183, 77);
+    padding:1rem;
+    color:white;
+    text-align: right;
+    font-weight: bold;
+    font-size: .85em;
+    border-bottom-left-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+
+}
+
+    
+
+
+#compania{
+    display:flex;
+    align-items: flex-start;
+
+}
+
+#logo{
+    padding:.1rem .5rem;
+    width: 90px;
+    height: 60px;
+    
+}
+
+#logotext{
+    color:white;
+    font-size: 2em;
+}
+
+#anuncio1{
+    display:flex;
+    flex-direction: row;
+}
+.nota{
+    padding:1.25rem;
+}
+
+#anuncio2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 20rem;
+    font-style: italic;
+
+    padding:3rem;
+}
+
+.titnegro{
+    color:black;
+    font-size: 2.4em;
+    font-weight: bolder;
+}
+.titmorado{
+    color:rgb(255, 204, 0);
+    font-size: 6em;
+    font-weight: bolder;
+    
+}
+
+.imamain{
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    }
+
+
+[type="checkbox"], label {
+    display: none;
+}
+
+
+
+.mn ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(255, 183, 77);
+    font-weight: bold;
+}
+
+
+.mn li {
+    float: left;
+   
+}
+
+
+.mn li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+.mn li a:hover:not(.active) {
+    /*background-color:rgb(79, 195, 247);*/
+    color:rgb(79, 195, 247);
+
+}
+
+/* text-align: justify;  */
+
+.mn li a.active {
+    background-color:black;
+    font-weight: bold;
+    color: white;
+    
+}
+
+
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 480px) {
+    nav{
+        padding:0px;
+        height: 0px;
+        }
+
+/*menu */
+
+[type="checkbox"], label {
+    /* display: none; */
+   position: absolute;
+       right: 10px; 
+         top: 10px; 
+}
+
+
+
+/*ocultando el menú inicial */
+
+nav ul {
+         display: none;
+   }
+
+/*creando cajita de menu de celular */
+
+label {
+         display: block;
+         background: black;
+       width: 40px;
+         height: 40px;
+         cursor: pointer;
+       position: absolute;
+       right: 15px; 
+         top: 15px; 
+   }
+
+/*creando las 3 barritas de la caja del menú */
+
+label:after{
+ content:'';
+ display: block;
+ width: 30px;
+ height: 5px;
+ background: white;
+ margin: 7px 5px;
+ box-shadow: 0px 10px 0px white, 0px 20px 0px white;
+}
+
+
+/*verificando el check del input para mostrar el menú */
+[type="checkbox"]:checked ~ ul {
+         display: block;
+         z-index: 9999;
+         position: absolute;
+         right: 20px;
+         left: 20px;
+}
+
+
+/* formateando menu alterno */
+.mn ul{
+    list-style-type: none;
+    background-color:rgb(218, 206, 252);
+    padding:0.0625rem;
+    }
+    
+    .mn ul li{
+    width: 100%;
+    text-align: center;
+    line-height: 1.6875rem;
+    margin: 0;
+    
+    }
+    
+    .mn ul li a{
+    font: bold 1em;
+    color:rgb(55, 4, 184);
+    padding: 2px 4px;
+    text-decoration: none;
+    
+    }
+    
+    .mn ul li a.activo{
+    background-color:rgb(30, 3, 99) ;
+        color:rgb(240, 255, 23);
+        font: bold;
+        cursor:default;
+        text-align: center;
+        line-height: 1.6875rem;
+        width: 100%;
+        margin: 0;
+        padding: 8px 4px;
+        }
+    
+    .mn ul li:hover:not(.activo){
+    background-color:rgb(55, 4, 184);  
+    color:rgb(246, 246, 248);
+    
+    }
+
+
+main{
+    background-color: rgb(1, 11, 11);
+    padding:.2rem;
+    margin:.9rem;
+    display:flex;
+    flex-direction: column;
+    
+}
+#anuncio1{
+    display:flex;
+    flex-direction: column;
+}
+
+.titnegro{
+    color:black;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.titmorado{
+    color:rgb(255, 204, 0);
+    font-size: 4em;
+    font-weight: bolder;
+    
+}
+
+}
+
+@media only screen and (max-width: 768px){
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+}
+
+
+
+

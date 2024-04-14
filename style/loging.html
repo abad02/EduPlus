@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iniciodesesion</title>
+    <style>
+    
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(179, 182, 183);
+        }
+        .container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <center> <img src="/flexy/images/usuario.png" alt="imagen"></center>
+<div class="container">
+    
+    <label for="uname"><b>Nombre de usuario</b></label>
+    <input type="text" placeholder="Ingresa tu nombre de usuario" name="uname" required>
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+
+    <a href="/flexy/flex.html"> <button type="submit">Iniciar sesión</button></a>
+    <a href="/flexy/flexbasic.html">Si no tienes una cuenta, ¡¡Crea una!!</a>
+</div>
+
+</body>
+</html>

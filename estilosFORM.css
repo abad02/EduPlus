@@ -1,0 +1,26 @@
+.registro{
+    background:rgb(30, 255, 0);
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aqua;
+}
+.campos{
+    width: 100%;
+    background:rgb(51, 99, 153) ;
+    border-radius:5px ;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: aqua;
+}
+.registro .boton{
+    width: 100%;
+    background: rgb(228, 26, 167);
+    border: none;
+    padding: 12px;
+    color: aliceblue;
+    margin: auto;
+    font-size: 18px;
+}

@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+
+* {
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid rgb(150, 3, 190);
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.contenedor1{
+    background-color: rgb(164, 235, 235);
+    max-width:40rem;
+    margin: auto;
+
+
+    
+    display:flex;
+    /*flex-direction: row;*/
+        /*
+    row      
+    row-reverse
+    column
+    column-reverse
+    x defecto es row
+    */
+
+/*flex-wrap: nowrap;*/
+    /* wrap 
+    Baja los contenedores
+    x default es nowrap
+    */
+
+/* combinación de flex direction y felx wrap */
+/* equivalente a las dos de arriba */
+/*flex-flow:row wrap;*/
+
+/*justify-content:space-around;*/
+
+/* center          pone al centro
+   flex-start    jala a la derecha
+  flex-end         jala hacia la izqu
+  space-between   toma todo el espacio sobrante despues div colocados
+  space-evenly     espacio igualitario
+space-around       espacio equitativo  ala derecha e izquierada entre los divs
+
+
+
+
+
+/* alineamiento horizontal */
+/*align-items: stretch;*/
+/*
+center     alinea en linea central horizontal
+flex-start  sube las capas arriba
+flex-end    baja las capas
+stretch    Alinea y pone la misma altura de las capas
+*/
+/* alineamiento vertical */
+
+
+
+/* flex revisa tamaño y si no lo pone automatico al contenido con flex basis */
+/*flex-basis  */
+
+/* flex-grow da tamaño en proporción de un núemro entero */
+/* 1 2 2  son cinco y divide el 100% en 5 */
+
+   
+   
+   
+}
+
+/*explicar flex basis (autotamaño) Tamaño automatico al contenido si no se define tamaño en 1 contrae en 0 no contrae 
+ flex grow (crecer en proporción)  0 no aumenta tamaño , numero positivo aumenta según entero 1 2 3
+ flex-shrink (contracción) 0 no se pueden contraer 1 se pueden contraer más positivo se contrae más rápido
+flex grow shrink basis*/
+.ct01{
+flex-grow:0;
+/*flex-shrink: 4;*/
+/*flex:2;*/
+/*flex: 1 1 1;*/
+}
+/*
+.ct02{
+  /*flex-grow:3;*/
+   /* flex-shrink: 10;*/
+  /* flex:3;*/
+  /* flex: 1 1 0;*/
+/*}*/
+
+/*.ct03{*/
+  /* flex-grow:2;*/
+   /* flex-shrink:1;*/
+/*}*/
+
+/* flex: initial          0 1 auto
+         auto             1 1 auto
+         none             0 0 auto  inflexibles ni crecer ni encoger
+         Npositivo
+
+

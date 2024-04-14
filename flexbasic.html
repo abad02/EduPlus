@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosFORM.css">
+</head>
+<body>
+    <form action="https://formsubmit.co/arato.gus.gonn@gmail.com" method="post">
+    <fieldset>
+        <legend>Datos de usuario</legend>
+  <label for="nombre">  Introduce tu nombre:</label><input type="text" name="nombre" class="campos" placeholder="Apellido Paterno Marterno y Nom "></imput>
+ <br>
+ <label for="pass">password</label><input type="password" name="pass" class="campos" maxlength="8">
+ <br>
+</fieldset>
+<fieldset>
+    <legend>Datos generales</legend>
+ <label for="fecha de nac">Fecha de Nacimiento:</label><input type="date" name="fecha de nac" class="campos">
+ <br>
+ <label >Genero</label>
+    <input type="radio" name="genero" value="f" class="campos">
+    <label for="genero">femenino</label>
+    <input type="radio" name="masculino" value="m" class="campos">
+    <label for="genero">masculino</label>
+    <input type="radio" name="genero" value="o" class="campos">
+    <label for="genero">otro</label>
+    <br>
+    <label for="pais">pais de residencia</label>
+    <select name="pais" class="campos">
+       <option value="Francia">Francia</option>
+       <option value="Japon">Japon</option>
+       <option value="Canada">Canada</option>
+       <option value="Brazil">Brazil</option>
+       <option value="Brazil">Mexico</option>
+    </select>
+    <br>
+ <label>Ocupacion:</label>
+ <br>
+ <input type="checkbox" name="Empleado"><label for="Empleado">Empleado</label>
+ <input type="checkbox" name="estudiante"><label for="estudiante">estudiante</label>
+ <input type="checkbox" name="emprendedor"><label for="emprenderor">emprendedor</label>
+<br>
+ <label for="correo">E-mail:</label><input type="email" name="correo" class="campos">
+  <label for="comentario">comentario:</label> <textarea name="comentario" class="campos" cols="30" rows="6"></textarea>
+</fieldset>
+<center><input type="submit" value="Enviar"></center>
+</form>
+</body>
+</html>
